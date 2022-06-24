@@ -7,15 +7,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DAO { // db에 접근하여 경로 만들어줌(통로역할)
-	Connection conn; // conn을 통해 db에 접속
-	PreparedStatement psmt;
-	ResultSet rs;
+	public Connection conn; // conn을 통해 db에 접속
+	public PreparedStatement psmt;
+	public ResultSet rs;
 
-	public void getConnect() { // getConnect 실행되면 conn무조건 생성
+	public void getConnect() { // getConnect 실행되면 DriverManager가 conn무조건 생성
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver"); 
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "hr"); //jdbc의 주소
-		} catch (ClassNotFoundException | SQLException e) { //conn : select ,update등 수행
+			Class.forName("oracle.jdbc.driver.OracleDriver");  // DriverManager
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "scott", "tiger"); //jdbc의 주소
+		} catch (ClassNotFoundException | SQLException e) { // conn : select ,update등 수행
 			e.printStackTrace();
 		}
 	}
