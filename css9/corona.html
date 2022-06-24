@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>corona.html</title>
+    <style>
+        end {
+			width: 800px;
+			margin: 0 auto;
+		}
+        
+        table {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            width: 1100px;
+        }
+
+        th {
+            border: 1px solid gray;
+            padding: 5px 30px 5px 30px;
+        }
+
+        td {
+            border: 1px solid gray;
+            padding-right: 5px;
+            text-align: right;
+            
+        }
+
+        #gray {
+            background-color: rgba(140, 141, 138, 0.068);
+        }
+
+        #grey {
+            background-color: whitesmoke;
+        }
+
+        #navy {
+            color: steelblue;
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 1.4em;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        small {
+            font-size: small;
+        }
+
+        start {
+            font-size: 1.8em;
+            font-weight: bolder;
+        }
+
+        blue {
+            color: mediumslateblue;
+            text-decoration: underline;
+        }
+
+        ul {
+            border: 1px solid steelblue;
+            font-size: 0.9em;
+            font-weight: 500;
+            background-color: steelblue;
+            color: white;
+            padding: 15px 100px;
+            width: 100%;
+            list-style: none;
+
+
+
+        }
+
+        body>div>ul>li {
+            display: inline-block;
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="end">
+    <ul>
+        <li>바로알기</li>
+        <li>예방접종</li>
+        <li>이상반응</li>
+        <li>뉴스&팩트체크</li>
+        <li>허위조작정보신고</li>
+        <li>홍보자료</li>
+        <li>Q&A모음</li>
+        <li>알림서식</li>
+    </ul><br><br><br>
+    <table>㈜ > 예방접종현황 > <blue>시도별일일접종 현황</blue> <br>
+        <start>시도별 일일 접종 현황</start>
+        <hr>
+        <thead>
+            <caption class="name">접종실적 총괄<small>(06.14.,00시기준)</small></caption>
+
+            <tr id="gray">
+                <th>구분</th>
+                <th>1차접종</th>
+                <th>2차접종</th>
+                <th>3차접종</th>
+                <th>4차접종</th>
+            </tr>
+            <tr>
+                <th id="grey">당일누적 ✴️+✳️</th>
+                <td>45,061,152</td>
+                <td>44,610,957</td>
+                <td>33,338,740</td>
+                <td>4,268,918</td>
+            </tr>
+            <tr>
+                <th id="grey">당일실적 ✴️</th>
+                <td>332</td>
+                <td>849</td>
+                <td>2,570</td>
+                <td>10,683</td>
+            </tr>
+            <tr>
+                <th id="grey">전일누적 ✳️</th>
+                <td>45,060,830</td>
+                <td>44,610,108</td>
+                <td>33,3336,170</td>
+                <td>4,258,235</td>
+            </tr>
+
+            </caption>
+        </thead>
+        <table>
+
+            <tbody>
+                <caption class="name">시도별 접종 현황</caption>
+
+                <tr id="gray">
+                    <th rowspan="2">구분</th>
+                    <th colspan="2">1차접종</th>
+                    <th colspan="2">2차접종</th>
+                    <th colspan="2">3차접종</th>
+                    <th colspan="2">4차접종</th>
+                </tr>
+                <tr id="gray">
+                    <th>당일실적</th>
+                    <th>당일누계</th>
+                    <th>당일실적</th>
+                    <th>당일누계</th>
+                    <th>당일실적</th>
+                    <th>당일누계</th>
+                    <th>당일실적</th>
+                    <th>당일누계</th>
+
+                </tr>
+                <tr id="navy">
+                    <th id="grey">합계</th>
+                    <td>332</td>
+                    <td>45,061,152</td>
+                    <td>849</td>
+                    <td>44,610,957</td>
+                    <td>2,570</td>
+                    <td>33,338,740</td>
+                    <td>10,683</td>
+                    <td>4,268,918</td>
+                </tr>
+                <tr>
+                    <th id="grey">서울</th>
+                    <td>73</td>
+                    <td>8,335,637</td>
+                    <td>163</td>
+                    <td>8,254,039</td>
+                    <td>595</td>
+                    <td>6,008,333</td>
+                    <td>1,932</td>
+                    <td>690,210</td>
+                </tr>
+                <tr>
+                    <th id="grey">부산</th>
+                    <td>20</td>
+                    <td>2,878,141</td>
+                    <td>31</td>
+                    <td>2,848,488</td>
+                    <td>167</td>
+                    <td>2,119,664</td>
+                    <td>835</td>
+                    <td>284,626</td>
+                </tr>
+                <tr>
+                    <th id="grey">대구</th>
+                    <td>17</td>
+                    <td>2,018,348</td>
+                    <td>44</td>
+                    <td>1,995,058</td>
+                    <td>116</td>
+                    <td>1,393,998</td>
+                    <td>391</td>
+                    <td>143,675</td>
+                </tr>
+                <tr>
+                    <th id="grey">인천</th>
+                    <td>16</td>
+                    <td>2,566,621</td>
+                    <td>34</td>
+                    <td>2,541,373</td>
+                    <td>123</td>
+                    <td>1,893,424</td>
+                    <td>542</td>
+                    <td>224,318</td>
+                </tr>
+
+                </caption>
+            </tbody>
+        </table>
+        </hr>
+    </table>
+    </div>
+</body>

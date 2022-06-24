@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>link 스타일</title>
+  <style>
+    .container {
+      width: 960px;
+      margin: 0 auto;
+    }
+    ul li {
+      margin: 15px;
+    }
+    li.hot::after {
+      content: "NEW!!";
+      font-size: x-small;
+      padding: 2px 4px;
+      margin: 0 10px;
+      border-radius: 2px;
+      background: #f00;
+      color: #fff;
+    }
+  </style>
+  <!--[if lt IE 9]>
+<script src="html5shiv.js"></scirpt>
+<![endif]-->
+</head>
+<body>
+  <div class="container">
+    <h1>제품 목록</h1>
+    <ul>
+      <li class="hot">바닐라크림 콜드브루</li>
+      <li>아이스 아메리카노</li>
+      <li>아이스라떼</li>
+      <li class="hot">블랙허니자몽티</li>
+    </ul>
+  </div>
+</body>
+</html>
